@@ -11,23 +11,23 @@
         <time datetime="2024-07-05">07.05.2024</time>
         <h1>NetflixOps: Building a Robust CI/CD Pipeline for Netflix Clone</h1>
 
-    <h2>📌 Overview</h2>
-    <p>In this blog post, we'll dive deep into creating a comprehensive CI/CD pipeline for a Netflix clone application. We'll explore how to set up a robust development environment using various DevOps tools and best practices. Let's get started! 🏁</p>
+    <h2>Overview</h2>
+    <p>In this blog post, we'll dive deep into creating a comprehensive CI/CD pipeline for a Netflix clone application. We'll explore how to set up a robust development environment using various DevOps tools and best practices. Let's get started! </p>
 
-    <h2>🛠️ Tools & Plugins Used</h2>
+    <h2>Tools & Plugins Used</h2>
     <ul>
-        <li>Jenkins 🏗️</li>
-        <li>Prometheus 📊</li>
-        <li>Grafana 📈</li>
-        <li>Docker 🐳</li>
-        <li>SonarQube 🔍</li>
-        <li>OWASP 🛡️</li>
-        <li>Trivy Scan 🔒</li>
+        <li>Jenkins</li>
+        <li>Prometheus </li>
+        <li>Grafana</li>
+        <li>Docker </li>
+        <li>SonarQube</li>
+        <li>OWASP</li>
+        <li>Trivy Scan</li>
     </ul>
 
-    <h2>🔧 Detailed Steps</h2>
+    <h2>Detailed Steps</h2>
 
-    <h3>1. Infrastructure Setup 🖥️</h3>
+    <h3>1. Infrastructure Setup </h3>
     <p>To begin, we'll need to set up our infrastructure:</p>
     <ul>
         <li>Create 3 EC2 instances:
@@ -39,16 +39,16 @@
         </li>
     </ul>
     <div class="tip">
-        <p>💡 Tip: Using separate servers for different purposes helps with resource management and scalability.</p>
+        <p>Tip: Using separate servers for different purposes helps with resource management and scalability.</p>
     </div>
 
-    <h3>2. Application Overview 🎬</h3>
+    <h3>2. Application Overview </h3>
     <p>We'll be using a Netflix clone built with React and TypeScript. You can find the repository here: <a href="https://github.com/gsbarure/netflix-clone-react-typescript">Netflix Clone</a></p>
     <div class="important">
         <p>⚠️ Important: Make sure to use a VPN while using the API or the app, as TMDB might not work in certain regions like India.</p>
     </div>
 
-    <h3>3. Docker Compose Setup 🐳</h3>
+    <h3>3. Docker Compose Setup </h3>
     <p>Run the following command to start our Docker containers:</p>
     <pre><code>docker-compose up</code></pre>
     <p>This will spin up 5 containers:</p>
@@ -60,10 +60,10 @@
         <li>Trivy</li>
     </ul>
     <div class="tip">
-        <p>📚 Learn more about docker-compose <a href="https://docs.docker.com/compose/">here</a>.</p>
+        <p> Learn more about docker-compose <a href="https://docs.docker.com/compose/">here</a>.</p>
     </div>
 
-    <h3>4. Prometheus Configuration 📊</h3>
+    <h3>4. Prometheus Configuration </h3>
     <p>Configure the <code>prometheus.yml</code> file to set up monitoring for all our services and dependencies.</p>
 
     <h3>5. Jenkins Configuration ⚙️</h3>
@@ -75,7 +75,7 @@
         <li>Install the Email Extension plugin</li>
     </ol>
 
-    <h3>6. Essential Jenkins Plugins 🔌</h3>
+    <h3>6. Essential Jenkins Plugins </h3>
     <p>Install the following plugins:</p>
     <ul>
         <li>Eclipse Temurin Installer</li>
@@ -85,7 +85,7 @@
         <li>OWASP Dependency Check Plugin</li>
     </ul>
 
-    <h3>7. Tool Configuration 🔧</h3>
+    <h3>7. Tool Configuration</h3>
     <p>Configure the following tools in Jenkins:</p>
     <ul>
         <li>Java</li>
@@ -95,21 +95,21 @@
         <li>SonarQube</li>
     </ul>
 
-    <h3>8. Global Credentials 🔑</h3>
+    <h3>8. Global Credentials </h3>
     <p>Add global credentials for:</p>
     <ul>
         <li>Docker Hub</li>
         <li>Email service</li>
     </ul>
 
-    <h3>9. Jenkins Job Creation 📝</h3>
+    <h3>9. Jenkins Job Creation </h3>
     <ol>
         <li>Create a new pipeline job named "Netflix"</li>
         <li>Add the Jenkins pipeline script from <code>Jenkins/jenkinsfile</code></li>
         <li>Review and modify the script as needed</li>
     </ol>
 
-    <h3>10. Pipeline Execution 🏃‍♂️</h3>
+    <h3>10. Pipeline Execution </h3>
     <p>Run the pipeline and watch as it:</p>
     <ul>
         <li>Checks out the code</li>
@@ -120,18 +120,19 @@
         <li>Pushes the image to Docker Hub</li>
     </ul>
 
-    <h3>11. Verification 🔍</h3>
+    <h3>11. Verification </h3>
     <p>Once the pipeline completes successfully, pull and run the Docker image to verify the application.</p>
 
-    <h2>📊 Monitoring Dashboard</h2>
+    <h2>Monitoring Dashboard</h2>
     <p>Here are some screenshots of our monitoring dashboard:</p>
 
-    <h2>🎉 Conclusion</h2>
+    <h2>Conclusion</h2>
     <p>Congratulations! You've successfully set up a comprehensive CI/CD pipeline for a Netflix clone application. This setup incorporates best practices in continuous integration, security scanning, and monitoring, ensuring a robust and reliable deployment process.</p>
     <p>By leveraging tools like Jenkins, Docker, SonarQube, and Prometheus, you've created a scalable and maintainable DevOps workflow that can be adapted for various applications.</p>
-    <p>Remember to regularly update your tools and security scans to keep your pipeline in top shape. Happy coding! 🚀👨‍💻👩‍💻</p>
+    <p>Remember to regularly update your tools and security scans to keep your pipeline in top shape. Happy coding!</p>
+    <a href"https://github.com/sarthakkapila/NetflixOps">Checkout repo for the code</a>
+
     </article>
-<a href"https://github.com/sarthakkapila/NetflixOps">Checkout repo for the code</a>
 
     <a href="../index.html">Back to Home</a>
 </body>
